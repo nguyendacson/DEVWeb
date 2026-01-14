@@ -102,5 +102,5 @@ C:\Users\nd-son\Desktop\CODE\C#\project1\bin\Debug\net10.0\Pomelo.EntityFramewor
 C:\Users\nd-son\Desktop\CODE\C#\project1\obj\Debug\net10.0\project1.csproj.AssemblyReference.cache
 C:\Users\nd-son\Desktop\CODE\C#\project1\obj\Debug\net10.0\project1.csproj.Up2Date
 C:\Users\nd-son\Desktop\CODE\C#\project1\obj\Debug\net10.0\project1.sourcelink.json
-C:\Users\nd-son\Desktop\CODE\C#\project1\obj\Debug\net10.0\compressed\7vmugyqkmy-{0}-uyw7n519vy-uyw7n519vy.gz
 C:\Users\nd-son\Desktop\CODE\C#\project1\obj\Debug\net10.0\compressed\jnhrpb3gom-{0}-v73z7aj81m-v73z7aj81m.gz
+C:\Users\nd-son\Desktop\CODE\C#\project1\obj\Debug\net10.0\compressed\7vmugyqkmy-{0}-jldolcu3r0-jldolcu3r0.gz
