@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|d:\\code\\learningcode\\c#\\devweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|d:\\code\\learningcode\\c#\\devweb\\views\\employee\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|solutionrelative:views\\employee\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|d:\\code\\learningcode\\c#\\devweb\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|d:\\code\\learningcode\\c#\\devweb\\services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|solutionrelative:services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|d:\\code\\learningcode\\c#\\devweb\\viewmodels\\employeedetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|solutionrelative:viewmodels\\employeedetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|d:\\code\\learningcode\\c#\\devweb\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B46A9B1F-AE01-2F33-B8FD-9C2E7CF098E8}|project1.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,24 +29,90 @@
       "VerticalTabListWidth": 175,
       "DocumentGroups": [
         {
-          "DockedWidth": 223,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 531,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBkAAAAAAAAAAAAAAA==",
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\Views\\Employee\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\Detail.cshtml",
+              "ToolTip": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\Views\\Employee\\Detail.cshtml",
+              "RelativeToolTip": "Views\\Employee\\Detail.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-15T17:04:54.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\Services\\Implementations\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\EmployeeService.cs",
+              "ToolTip": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\Services\\Implementations\\EmployeeService.cs",
+              "RelativeToolTip": "Services\\Implementations\\EmployeeService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAUwCgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T16:04:54.534Z",
+              "WhenOpened": "2026-01-15T17:02:01.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-15T17:00:57.273Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 293,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA5wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T16:31:58.874Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 68,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeDetailVM.cs",
+              "DocumentMoniker": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\ViewModels\\EmployeeDetailVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EmployeeDetailVM.cs",
+              "ToolTip": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\ViewModels\\EmployeeDetailVM.cs",
+              "RelativeToolTip": "ViewModels\\EmployeeDetailVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:59:46.751Z",
               "EditorCaption": ""
             }
           ]

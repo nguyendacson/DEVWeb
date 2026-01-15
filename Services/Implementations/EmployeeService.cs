@@ -1,4 +1,5 @@
-﻿using project1.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using project1.Models;
 using project1.Services.Interfaces;
 using project1.ViewModels;
 using System.Linq;
@@ -36,9 +37,38 @@ namespace project1.Services.Implementations
             return _appDbContext.Employee.ToList();
         }
 
+        [HttpPost]
         public void SaveSalary(EmployeeDetailVM vm)
         {
-            throw new NotImplementedException();
+            int idEmp = vm.Employee!.Id;
+
+            decimal baseSalary = vm.SalaryInputVM?.BaseSalary ?? 0;
+            decimal bonusSalary = vm.SalaryInputVM?.Bonus ?? 0;
+            decimal totalSalary = baseSalary + bonusSalary;
+
+            var existingSalary = _appDbContext.Salary.FirstOrDefault(s => s.EmployeeId == idEmp);
+
+            if(existingSalary != null)
+            {
+                // Update existing salary
+                existingSalary.BaseSalary = baseSalary;
+                existingSalary.Bonus = bonusSalary;
+                existingSalary.TotalSalary = totalSalary;
+            }
+            else
+            {
+                // Create new salary record
+                var newSalary = new Salary
+                {
+                    EmployeeId = idEmp,
+                    BaseSalary = baseSalary,
+                    Bonus = bonusSalary,
+                    TotalSalary = totalSalary
+                };
+                _appDbContext.Salary.Add(newSalary);
+            }
+
+            _appDbContext.SaveChanges(); 
         }
     }
 }

@@ -2,22 +2,23 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using project1.Models;
+using project1.Services.Interfaces;
 using project1.ViewModels;
 
 namespace project1.Controllers
 {
     public class EmployeeController : Controller
     {
-        private readonly AppDbContext _appDbContext;
-        public EmployeeController(AppDbContext appDbContext)
+        private readonly IEmployeeService _employeeService;
+        public EmployeeController(IEmployeeService employeeService)
         {
-            _appDbContext = appDbContext;
+            _employeeService = employeeService;
         }
 
         public IActionResult Index()
         { 
-            var listEmployee = _appDbContext.Employee.ToList();
-            ViewBag.Message = "Connect success";
+
+            var listEmployee = _employeeService.GetEmployeeList();
             return View(listEmployee);
         }
 
@@ -28,65 +29,23 @@ namespace project1.Controllers
 
         public IActionResult Detail(int id)
         {
-            var emp = _appDbContext.Employee.FirstOrDefault(item => item.Id == id);
-            var salary = _appDbContext.Salary.FirstOrDefault(item => item.EmployeeId == id);
-
-            if (emp == null)
-                return NotFound();
-
-            var vm = new EmployeeDetailVM
+            var idEmployee = _employeeService.GetDetailVM(id);
+            if(idEmployee == null)
             {
-                Employee = emp,
-                Salary = salary,
-                SalaryInputVM = new SalaryInputVM()
-            };
-            return View(vm);
+                return NotFound();
+            }
+            return View(idEmployee);
         }
 
         [HttpPost]
         public IActionResult Create(EmployeeDetailVM employeeDetailVM)
         {
-            if (employeeDetailVM == null)
+            if(!ModelState.IsValid)
             {
-                return BadRequest("Model binding thất bại");
+                return View(employeeDetailVM);
             }
-
-            int idEmp = employeeDetailVM.Employee!.Id;
-
-            decimal baseSalary = employeeDetailVM.SalaryInputVM?.BaseSalary ?? 0;
-            decimal bonusSalary = employeeDetailVM.SalaryInputVM?.Bonus ?? 0;
-            decimal totalSalary = baseSalary + bonusSalary;
-
-            if (!ModelState.IsValid)
-            {
-                return RedirectToAction("Detail", new { id = idEmp});
-            }
-
-            var checkExist = _appDbContext.Salary.FirstOrDefault(
-                e => e.EmployeeId == idEmp);
-
-            if (checkExist != null)
-            {
-                checkExist.BaseSalary = baseSalary;
-                checkExist.Bonus = bonusSalary;
-                checkExist.TotalSalary = totalSalary;
-            }
-            else
-            {
-                var salary = new Salary
-                {
-                    EmployeeId = idEmp,
-                    BaseSalary = baseSalary,
-                    Bonus = bonusSalary,
-                    TotalSalary = totalSalary
-                };
-
-                _appDbContext.Salary.Add(salary);
-
-            }
-            _appDbContext.SaveChanges();
-
-            return RedirectToAction("Detail", new { id = idEmp});
+            _employeeService.SaveSalary(employeeDetailVM);
+            return RedirectToAction("Detail", new { id = employeeDetailVM.Employee!.Id});
         }
 
         [HttpDelete]

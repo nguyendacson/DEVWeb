@@ -1,10 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using project1.Models;
+using project1.Services.Implementations;
+using project1.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
 
 builder.Services.AddDbContext<AppDbContext>(options =>

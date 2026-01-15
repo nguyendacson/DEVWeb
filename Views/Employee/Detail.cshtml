@@ -5,7 +5,7 @@
 <header class="header_Detail">
     <h1>@ViewData["Title"]</h1>
     <div>
-        <form asp-controller="Employee" asp-action="Create" method="post">
+        <form id="salaryForm" asp-controller="Employee" asp-action="Create" method="post">
             <input type="hidden" name="Employee.Id" value="@Model.Employee!.Id" />
 
             <div class="form-group mt-2">
@@ -17,7 +17,7 @@
                 <label>Thưởng</label>
                 <input asp-for="SalaryInputVM.Bonus" class="form-control" placeholder="Nhập thưởng (nếu có)" />
             </div>
-            <button  type="submit" class="btn btn-primary mt-3">Submit</button>
+            <button id="submitSalary" type="submit" class="btn btn-primary mt-3" disabled>Submit</button>
         </form>
     </div>
 </header>
