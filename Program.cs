@@ -18,7 +18,7 @@ var app = builder.Build();
 // Error handling
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
+    app.UseExceptionHandler("/Employee/Error");
 }
 
 // Static files (BẮT BUỘC)
@@ -30,7 +30,7 @@ app.UseAuthorization();
 // MVC routing
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"
+    pattern: "{controller=Employee}/{action=Index}/{id?}"
 );
 
 app.Run();

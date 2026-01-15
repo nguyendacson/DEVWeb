@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nd-son\\Desktop\\CODE\\C#\\project1\\project1.csproj": {}
+    "D:\\CODE\\LearningCode\\C#\\DEVWeb\\project1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nd-son\\Desktop\\CODE\\C#\\project1\\project1.csproj": {
+    "D:\\CODE\\LearningCode\\C#\\DEVWeb\\project1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nd-son\\Desktop\\CODE\\C#\\project1\\project1.csproj",
+        "projectUniqueName": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\project1.csproj",
         "projectName": "project1",
-        "projectPath": "C:\\Users\\nd-son\\Desktop\\CODE\\C#\\project1\\project1.csproj",
-        "packagesPath": "C:\\Users\\nd-son\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nd-son\\Desktop\\CODE\\C#\\project1\\obj\\",
+        "projectPath": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\project1.csproj",
+        "packagesPath": "C:\\Users\\dacso\\.nuget\\packages\\",
+        "outputPath": "D:\\CODE\\LearningCode\\C#\\DEVWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nd-son\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dacso\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

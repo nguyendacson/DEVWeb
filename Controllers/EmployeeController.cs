@@ -6,10 +6,10 @@ using project1.ViewModels;
 
 namespace project1.Controllers
 {
-    public class HomeController : Controller
+    public class EmployeeController : Controller
     {
         private readonly AppDbContext _appDbContext;
-        public HomeController(AppDbContext appDbContext)
+        public EmployeeController(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
         }
